@@ -46,8 +46,8 @@ if game.PlaceId == 6403373529 then
         rconsoleprint("EXPLOITING IS A CRIME IN YOUR PLACE OF RESIDENCE\n\nWE HAVE GATHERED YOUR LOCATION, AND REPORTED THE INFORMATION TO YOUR LOCAL POLICE.")
     end
     
-    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Message from Rogue Hub: This player has been banned while attempting to use our script! Enjoy playing the game free of hackers.", "All")
-    game.ReplicatedStorage.WalkSpeedChanged:FireServer("Banned whilst using Rogue Hub! Slaps: " .. game.Players.LocalPlayer.leaderstats.Slaps.Value)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Message from Galaxy Hub: This player has been banned while attempting to use our script! Enjoy playing the game free of hackers.", "All")
+    game.ReplicatedStorage.WalkSpeedChanged:FireServer("Banned whilst trying to use a rojo spam script! Slaps: " .. game.Players.LocalPlayer.leaderstats.Slaps.Value)
 elseif game.PlaceId == 11520107397 then
     if writefile and not isfile("BANNED_FROM_SLAP_BATTLES.gif") then
         writefile("BANNED_FROM_SLAP_BATTLES.gif", game:HttpGet("https://media.tenor.com/PHREyAefRckAAAAS/packwatch.gif"))
@@ -91,7 +91,7 @@ elseif game.PlaceId == 11520107397 then
     end
     
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Message from Rogue Hub: This player has been banned while attempting to use our script! Enjoy playing the game free of hackers.", "All")
-    game.ReplicatedStorage.WalkSpeedChanged:FireServer("Banned whilst using Rogue Hub! Slaps: " .. game.Players.LocalPlayer.leaderstats.Slaps.Value)
+    game.ReplicatedStorage.WalkSpeedChanged:FireServer("Banned for using a rojo spam script! Slaps: " .. game.Players.LocalPlayer.leaderstats.Slaps.Value)
 else
     if writefile and not isfile("BANNED_FROM_SLAP_BATTLES.gif") then
         writefile("BANNED_FROM_SLAP_BATTLES.gif", game:HttpGet("https://media.tenor.com/PHREyAefRckAAAAS/packwatch.gif"))
@@ -135,8 +135,8 @@ else
     end
     
     if game.ReplicatedStorage.DefaultChatSystemChatEvents:FindFirstChild("SayMessageRequest") then
-        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Message from Rogue Hub: This player has been banned while attempting to use our script! Enjoy playing the game free of hackers.", "All")
+        game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Message from Galaxy Hub: This player has been banned while attempting to use our script! Enjoy playing the game free of hackers.", "All")
     end
     
-    game.Players.LocalPlayer:Kick("Banned for exploiting.")
+    game.Players.LocalPlayer:Kick("Banned for attempting to use a rojo spam script.")
 end
